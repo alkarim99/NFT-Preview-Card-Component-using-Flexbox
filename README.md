@@ -12,4 +12,20 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-![](./screenshot.jpg)
+![](./Screenshot.png)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+
+### What I learned
+First time using flexbox and it's fun haha
+
+## Author
+
+- Frontend Mentor - [@alkarim99](https://www.frontendmentor.io/profile/alkarim99)
+- Twitter - [@a_alkarim_a](https://www.twitter.com/a_alkarim_a)
