@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(217, 54%, 11%);
+      box-sizing: border-box;
+    }
+    a{
+      text-decoration: none;
+      color: hsl(0, 0%, 100%);
+    }
+    a:hover{
+      color: hsl(178, 100%, 50%);
+    }
+
+    .card{
+      background-color: hsl(216, 50%, 16%);
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .card .card-image{
+      background-image: url("images/image-equilibrium.jpg");
+      background-size: cover;
+      height: 300px;
+      border-radius: 10px;
+      position: relative;
+    }
+    .card .card-image .color{
+      position: absolute;
+      background-color: hsl(178, 100%, 50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      opacity: 0.5;
+      display: none;
+    }
+    .card .card-image a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    .card .card-image img{
+      height: 50px;
+    }
+    .card .card-image:hover .color{
+      display: block;
+    }
+    .card .card-image:hover a{
+      display: flex;
+    }
+
+    .card .card-body .capt-1, .capt-3{
+      color: hsl(215, 51%, 70%);
+    }
+    .card .card-body .capt-1{
+      font-weight: 300;
+    }
+    .card .card-body .capt-2{
+      color: hsl(178, 100%, 50%);
+    }
+    .card .card-body .desc{
+      display: flex;
+      justify-content: space-between;
+    }
+    .card .card-body .desc .eth, .clock{
+      display: flex;
+      align-items: center;
+    }
+    .card .card-body .desc .eth img{
+      margin-right: 3px;
+    }
+
+
+    hr{
+      border: 1px solid hsl(215, 32%, 27%);
+    }
+
+    .card-footer{
+      display: flex;
+      align-items: center;
+    }
+    .card-footer img{
+      height: 40px;
+      border: 1px solid hsl(0, 0%, 100%);
+      border-radius: 100px;
+      margin-right: 20px;
+    }
+    .card-footer p{
+      color: hsl(215, 51%, 70%);
+      font-weight: 300;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-image">
+      <div class="color">
+      </div>
+      <a href="#">
+        <img src="images/icon-view.svg" alt="view">
+      </a>
+    </div>
+    <div class="card-body">  
+      <p class="header"><a href="#">Equilibrium #3429</a></p>
+      <p class="capt-1">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="desc">
+        <div class="eth">
+          <img src="images/icon-ethereum.svg" alt="eth">
+          <p class="capt-2">0.041 ETH</p>
+        </div>
+        <div class="clock">
+          <img src="images/icon-clock.svg" alt="clock">
+          <p class="capt-3">3 days left</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="card-footer">
+      <img src="images/image-avatar.png" alt="avatar">
+      <p>Creation of <a href="#">Jules Wyvern</a></p>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdullah Al-Karim</a>.
+  </div>
+</body>
+</html>
